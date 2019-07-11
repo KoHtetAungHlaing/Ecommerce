@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="340dp">
+
+    <TextView
+            android:textColor="#fff"
+            android:background="#8091E4"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:text="Product Title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/tvProductTitle"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imgProductSingle"/>
+
+    <LinearLayout
+            android:background="#EF4B4B"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        <TextView
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:gravity="center"
+                android:text="$200ail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tvProductPrice"
+                android:layout_weight="1"/>
+        <Button
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="Detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnProductDetail"
+                android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
